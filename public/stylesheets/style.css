@@ -7,12 +7,17 @@ label, table, caption {
   padding: 0; }
 
 html {
-  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif; }
   html body {
     background-image:url(/mariosebasco.github.io/public/images/Galaxy.jpeg);
     background-repeat:no-repeat;
     background-size:100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
     /* Header */
     /* General main template */
     /* Portfolio page */
@@ -20,6 +25,9 @@ html {
     /* Contact page */
     /* Project page template */
     /* Footer */ }
+    html body wrapper {
+      min-height: 100%;
+      position: relative;
     html body header {
       width: 100%;
       background-color: #222;
@@ -201,10 +209,14 @@ html {
       html body main.project section#contact-content ol, html body main.project section#contact-content ul {
         margin-left: 40px; }
     html body footer {
-      margin-top: 40px; 
+      height: 40px; 
       width: 100%;
       background-color: #222;
-      color: #fff; }
+      color: #fff;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+    }
       html body footer ul {
         margin: 0 auto;
         padding: 10px 0;
