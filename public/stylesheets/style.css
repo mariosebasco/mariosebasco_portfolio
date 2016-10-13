@@ -53,7 +53,7 @@ html {
       width: 100%; }
       html body main > h1.page-header {
 	background-color:white;
-	opacity:0.8;
+/*	opacity:0.8;*/
         margin: 20px auto 10px;
         width: 80%; }
       html body main section {
