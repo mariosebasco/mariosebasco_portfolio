@@ -201,10 +201,7 @@ html {
       html body main.project section#contact-content ol, html body main.project section#contact-content ul {
         margin-left: 40px; }
     html body footer {
-      position:absolute;
-      bottom:0;
-      height:60px;
-     /* margin-top: 100%; */
+      margin-top: 40px; 
       width: 100%;
       background-color: #222;
       color: #fff; }
