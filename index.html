@@ -9,7 +9,7 @@ title: Portfolio
 		<div id="portfolio-gallery">
 			{% assign sorted_pages = site.projects | sort:"path" %}
 			{% for project in sorted_pages %}
-			<div class="w3-container">
+			<div class="container">
 				<div class="aspect-ratio-keeper"> </div>
 				<div class="content">
 					<a href="{{ site.baseurl }}{{ project.url }}">
