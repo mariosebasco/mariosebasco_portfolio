@@ -58,7 +58,7 @@ html {
         width: 80%; }
       html body main section {
 	background-color:white;
-	opacity:0.8;
+/*	opacity:0.8;*/
         margin: 0 auto;
         width: 80%; }
     html body main#portfolio div#portfolio-gallery {
