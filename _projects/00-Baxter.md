@@ -4,7 +4,7 @@ title: Baxter Pick and Place
 date: December 2016
 imageMain: /mariosebasco.github.io/public/images/baxter.png
 imagePage: /mariosebasco.github.io/public/images/baxter.png
-permalink: "project-3.html"
+permalink: "project-1.html"
 ---
 
 ## Overview

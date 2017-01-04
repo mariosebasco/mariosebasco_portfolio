@@ -4,7 +4,7 @@ title: Velocity Obstacles
 date: December 2016
 imageMain: /mariosebasco.github.io/public/images/velocity_obstacle.png
 imagePage: /mariosebasco.github.io/public/images/velocity_obstacle.png
-permalink: "project-3.html"
+permalink: "project-2.html"
 ---
 
 ## Overview
