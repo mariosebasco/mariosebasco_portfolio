@@ -4,7 +4,7 @@ title: NASA SAFE50
 date: June - August, 2015
 imageMain: /mariosebasco.github.io/public/images/NASA.png
 imagePage: /mariosebasco.github.io/public/images/safe50.jpg
-permalink: "project-3.html"
+
 ---
 
 ## Overview
