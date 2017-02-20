@@ -17,5 +17,5 @@ During my time at Ames I Served as the lead of the CFD team researching urban wi
 The technical paper of all that was done for the research project can be found here: <a href="/mariosebasco.github.io/pdf_files/NASAFullRep.pdf">NASA Technical Report</a>
 
 
-![alt text](/mariosebasco.github.io/public/images/safe50.jpg =800x600)
+![](/mariosebasco.github.io/public/images/safe50.jpg =800x600)
 
