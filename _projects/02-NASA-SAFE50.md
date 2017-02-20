@@ -3,8 +3,6 @@ layout: project
 title: NASA SAFE50
 date: June - August, 2015
 imageMain: /mariosebasco.github.io/public/images/NASA.png
-imagePage: /mariosebasco.github.io/public/images/safe50.jpg
-
 ---
 
 ## Overview
@@ -17,3 +15,7 @@ Ensuring the safe flight of Unmanned Aerial Systems (UASs) is a crucial step as 
 During my time at Ames I Served as the lead of the CFD team researching urban wind environments and their effect on low flying UAS’s. In particular I looked into potential areas such as "urban canyons", and other high wind velocity gradient regions near buildings. The effects of which were simulated and partially resolved with the implementation of wind prediction control algorithms developed in Simulink. Additionally I Developed an optimization algorithm in MATLAB that could numerically calculate the fastest path between to points while taking into account nearby wind velocities obtained from CFD tests.
 
 The technical paper of all that was done for the research project can be found here: <a href="/mariosebasco.github.io/pdf_files/NASAFullRep.pdf">NASA Technical Report</a>
+
+
+![alt text](/mariosebasco.github.io/public/images/safe50.jpg "UAV CFD simulations")
+
