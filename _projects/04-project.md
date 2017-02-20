@@ -2,7 +2,7 @@
 layout: project
 title: NASA SAFE50
 date: June - August, 2015
-imageMain: /mariosebasco.github.io/public/images/NASA.png
+imageMain: /mariosebasco.github.io/public/images/liftFinalUp.jpg
 ---
 
 ## Overview
@@ -17,5 +17,5 @@ During my time at Ames I Served as the lead of the CFD team researching urban wi
 The technical paper of all that was done for the research project can be found here: <a href="/mariosebasco.github.io/pdf_files/NASAFullRep.pdf">NASA Technical Report</a>
 
 
-<img src="/mariosebasco.github.io/public/images/safe50.jpg" alt="Safe 50" style="width:800px;height:434px;">
+<img src="/mariosebasco.github.io/public/images/manualLift.jpg" alt="wheelchair lift" style="width:800px;height:434px;">
 
