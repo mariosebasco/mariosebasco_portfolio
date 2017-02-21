@@ -12,4 +12,4 @@ The video below shows the algorithm implemented using three robots, where two of
 
 Future research should look into upgrading the code to account for multiple active robots. This is called Reciprocal Collision Avoidance and has been studied extensively in literature.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=m1JgThOrWjI" target="_blank"><img src="http://img.youtube.com/vi/m1JgThOrWjI/0.jpg" alt="Velocity Obstacles" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=m1JgThOrWjI" target="_blank"><img src="http://img.youtube.com/vi/m1JgThOrWjI/0.jpg" alt="Velocity Obstacles" width="480" height="360" border="1" /></a>
