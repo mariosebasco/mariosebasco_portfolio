@@ -26,16 +26,16 @@ The culmination of these components forms the heart of the project. From here a 
 
 In the emerging field of haptics, the desire to accurately and realistically replicate virtual environments has always been at the forefront of research. As a result, this project takes from several publications and applications.
 
-In order to increase the perceived stiffness of a virtual wall, this project incorporates the notion of rate hardness introduced by D.A. Lawrence in 2002. Instead of increasing stiffness which in general cannot reach very high values due to restrictions in  mechanical actuators, Lawrence proposes an increase in the ratio of initial force rate of change to impact velocity. Furthermore, I have also borrowed from Stanfords online haptics course in generating virtual texture. By creating small regions of varying forces one perceives surfaces of varying roughness. With both position and force control the kinesthetic senses of the human body can be manipulated fairly efficiently. 
+In order to increase the perceived stiffness of a virtual wall, this project incorporates the notion of rate hardness introduced by D.A. Lawrence in 2002. Instead of increasing stiffness which in general cannot reach very high values due to restrictions in  mechanical actuators, Lawrence proposes an increase in the ratio of initial force rate of change to impact velocity. In doing this, the study found the perceived stiffness of a wall felt by a person can be improved considerably. Furthermore, I have also borrowed from Stanfords online haptics course in generating virtual texture. By creating small regions of varying forces one perceives surfaces of varying roughness. With both position and force control the kinesthetic senses of the human body can be manipulated fairly efficiently. 
 
 Looking forward I plan to invest deeper into impedance control and incorporate more complex dynamic systems, such as 1DOF spring mass systems, etc..
 
 
 ## ROS Interface
 
-In order to provide the user with a more realistic environment, and generate an overall more robust system, I decided to incorporate ROS to provide an interface with the computer. In doing so I will be able to provide the user with ore control over what they want to feel as well as actually providing them with visual feedback of the system motion.
+In order to provide the user with a more realistic environment, and generate an overall more robust system, I decided to incorporate ROS to provide an interface with the computer. In doing so I will be able to provide the user with core control over what they want to feel as well as actually providing them with visual feedback of the system motion.
 
-**Work in Progress**
+--Work in Progress--
 
 ## CAD and Fabrication
 
