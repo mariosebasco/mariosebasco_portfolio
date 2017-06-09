@@ -31,9 +31,9 @@ Looking forward I plan to invest deeper into impedance control and incorporate m
 
 ## ROS Interface
 
-In order to provide the user with a more realistic environment, and generate an overall more robust system, I decided to incorporate ROS to provide an interface with the computer. In doing so I will be able to provide the user with core control over what they want to feel as well as actually providing them with visual feedback of the system motion.
+In order to provide the user with a more realistic environment, and generate an overall more robust system, I decided to incorporate ROS to provide an interface with the computer. In doing so I am able to provide the user with core control over what they want to feel as well as actually providing them with visual feedback of the system motion. As can be seen in the image and the video, the user is provided with a visual interface using Rviz. Depending on the simulation one can see a mass, or a spring, or a combination making the overall experience more realistic and stimulating.
 
---Work in Progress--
+
 
 ## CAD and Fabrication
 
