@@ -2,7 +2,7 @@
 layout: project
 title: Haptic Feedback Device
 date: March 2017
-imageMain: /mariosebasco.github.io/public/images/phantom_omni.jpg
+imageMain: /mariosebasco.github.io/public/images/Haptic_Image.jpg
 ---
 
 <img src="/mariosebasco.github.io/public/images/Mass_Spring.PNG" alt="Project" style="width:800px;height:316px;">
