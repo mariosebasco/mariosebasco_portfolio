@@ -43,4 +43,4 @@ In designing a prototype, the objective was to give the user a linear path on wh
 
 One advantage to the design introduced is the ease in building. All of the parts in the CAD model can easily be 3D printed or laser cut. With the addition of a few nuts and bolts, and an adhesive, the system can be built in less than a day.
 
-<a href="http:https://www.youtube.com/watch?v=MxQj3a0YSm8" target="_blank"><img src="https://www.youtube.com/watch?v=MxQj3a0YSm8.jpg" alt="Haptics" width="480" height="360" border="1" /></a>
+<a href="https://www.youtube.com/watch?v=MxQj3a0YSm8" target="_blank"><img src="https://www.youtube.com/watch?v=MxQj3a0YSm8.jpg" alt="Haptics" width="480" height="360" border="1" /></a>
