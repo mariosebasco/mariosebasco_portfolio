@@ -5,7 +5,7 @@ date: March 2017
 imageMain: /mariosebasco.github.io/public/images/Northwestern.png
 ---
 
-<img src="/mariosebasco.github.io/public/images/Spring_Mass.PNG" alt="Project" style="width:800px;height:316px;">
+
 
 ## Overview
 
