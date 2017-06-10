@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Human-Robot Haptic Interface
-date: 2017
+date: March 2017
 imageMain: /mariosebasco.github.io/public/images/Northwestern.png
 ---
 
