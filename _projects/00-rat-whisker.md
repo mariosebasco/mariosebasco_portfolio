@@ -15,12 +15,12 @@ As part of my final Project at northwestern University, I am working with profes
 
 Early stage research has been focused on the ability to give the user feedback which can relate back a sense of magnitude and position given wisker data. In order to do this small micropumps will apply pressure at several different locations throughout a persons fingers, when a rat whisker comes into contact with a surface activating the correct pump will give a sense of the forces being felt in a specific location.
 
-<img src="/mariosebasco.github.io/public/images/deviceSetup.png" alt="device_setup" style="width:800px;height:316px;">
+<img src="/mariosebasco.github.io/public/images/deviceSetup.png" alt="micro_pump" style="width:800px;height:316px;">
 
 
 The pump shown in the figure is a piezoelectric pump, which can be, when supplied with an AC current at its resonant frequency (of 26KHz), used to blow air into a small cavity. In this case the material wraps around the finger as seen. The design is created with one thick wall and one thin, such that the pressure is not diverted outwards but rather towards the finger of the person using the device. The figure shown below illustrates how one such device looks at this stage of testing, and how it would approximately interact with a persons finger.
 
-<img src="/mariosebasco.github.io/public/images/microPump.png" alt="micro_pump" style="width:800px;height:316px;">
+<img src="/mariosebasco.github.io/public/images/microPump.png" alt="device_setup" style="width:800px;height:316px;">
 
 
 Initial testing showed that the mechanism could be used to provide active feedback to a person. By controlling the voltage applied to the piezo the pressure can be easily made to increase or decrease on command. 
