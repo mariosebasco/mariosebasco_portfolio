@@ -9,16 +9,16 @@ imageMain: /mariosebasco.github.io/public/images/Northwestern.png
 
 ## Overview
 
-As part of my final Project at northwestern University, I am working with professor Mitra Hartmann in her research with rat whiskers. As the group has been studying the subject for years, they have researched and developed many interesting topics. Most notably, the group at Northwestern has developed a mechanical rat whisker capable of obtaining moment, force, and spatial information. In an effort to exploit this data, my project aims at creating a human interface for the device. Specifically I seek to design and build a model which will give humans control over an array of rat whiskers, and accurately and intuitively relate that information back to the user in the form of haptic feedback.
+As part of my final project at Northwestern University, I am working with professor Mitra Hartmann in her research with rat whiskers. As the group has been studying the subject for years, they have researched and developed many interesting topics. Most notably, the group at Northwestern has developed a mechanical rat whisker capable of obtaining moment and force information. In an effort to exploit this data, my project aims at creating a human interface for the device. Specifically I seek to design and build a model which will give humans control over an array of rat whiskers, and accurately and intuitively relate that information back to the user in the form of haptic feedback.
 
 ## Early Prototyping
 
-Early stage research has been focused on the ability to give the user feedback which can relate back a sense of magnitude and position given whisker data. In order to do this small micropumps will apply pressure at several different locations throughout a persons fingers, when a rat whisker comes into contact with a surface activating the correct pump will give a sense of the forces being felt in a specific location.
+Early stage research has been focused on the ability to give the user feedback which can relate back a sense of magnitude and position given whisker data. In order to do this small micropumps will apply pressure at several different locations throughout a person's fingers, when a rat whisker comes into contact with a surface activating the correct pump will give a sense of the forces being felt in a specific location.
 
 <img src="/mariosebasco.github.io/public/images/microPump.png" alt="micro_pump" style="width:600px;height:397px;">
 
 
-The pump shown in the figure is a piezoelectric pump, which can be, when supplied with an AC current at its resonant frequency (of 26KHz), used to blow air into a small cavity. In this case the material wraps around the finger as seen. The design is created with one thick wall and one thin, such that the pressure is not diverted outwards but rather towards the finger of the person using the device. The figure shown below illustrates how one such device looks at this stage of testing, and how it would approximately interact with a persons finger.
+The pump shown in the figure is a piezoelectric pump, which can be, when supplied with an AC current at its resonant frequency (of 26KHz), used to blow air into a small cavity. In this case the material wraps around the finger as seen. The design is created with one thick wall and one thin, such that the pressure is not diverted outwards but rather towards the finger of the person using the device. The figure shown below illustrates how one such device looks at this stage of testing, and how it would approximately interact with a person's finger.
 
 <img src="/mariosebasco.github.io/public/images/deviceSetup.png" alt="device_setup" style="width:600px;height:397px;">
 
