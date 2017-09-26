@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Controls</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Home</a>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+						  <h1 class="major">Controls</h1>
+						  <h4> Overview </h4>
+						  <p> This page presents some of the work I've done regarding optimal control and dynamics. Examples include:</p>
+						  <ul>
+						    <li align="left"> Solution of Euler-Lagrange equations in sovling dynamic systems such as double and triple pendulums with constraints and impacts</li>
+						    <li align="left"> Solution to inverse kinematics and inverse dynamics problems to be used in the manipulation of robotic arms and cars.</li>
+						    <li align="left"> Solution to iterative non linear control algorithms, including infinite dimensional cost functions</li>
+						    <li align="left"> </li>
+						    <li align="left"> </li>
+						  </ul>						  
+						  <hr/>
+						  <h4>IMU Mouse Control</h4>
+						  <table>
+						    <tr>
+						      <td align="center"><a class="image"><img src="images/gyro_mouse.gif" alt="gyro mouse" width="266" height="400" /></a></td>
+						    </tr>
+						  </table>
+						  <p>The short video displayed shows the effects of my computer mouse being controlled by an IMU. The IMU is initialized and sends accelermoter data to the PIC32 microcontroller using I2C. The PIC then transferes that data over USB to the mouse. Specifically the data being listened to is the increase in g-force readings in both the horizontal axes. As the magnitude of either increases, a proportional value is transmitted over USB and read by the computer as if it were coming from a mouse. The complete code used in this assignment can be seen <b><a href="https://github.com/mariosebasco/ME433_GIT/tree/master/HW9_2/firmware" target="blank"> here </a></b>. A closer look at the code shows that a small LCD screen is also being used. Although not easy to see in the video, the LCD screen also receives data from the IMU using SPI communication. With this data it is able to draw 2 bars that represent axis. Each of these bars also change in size proportional to the g-force measurement readings from the acceleromter data.</p>
+						  
+						  <hr/>
+						  <h4>The Tech Cup</h4>
+						  <a class="image right"><img src="images/car1.gif" alt="car" width="266" height="400"/></a>
+						  <p> As part of a final project in my advanced mechatronics class, students were made to compete in a race. The project setup was as follows, each student has to design and build a car which follows a gray road (as shown in the video), the only restrictions were size constraints of each vehicle. The cars were almost entirely made from scratch. The wheels were 3D printed, the body laser cut from acrylic, the PCBs individually designed in Eagle, and more.  </p>
+						  <p> The bulk of the processing for the car is done in an Android phone. The camera on the phone is used in tracking the road. A simple image processing algorithm scans the image received for the color gray (with sliders available to adust thresholds). The center of mass of the gray pixels is obtained and the difference between it and the center of the screen is taken. This value represents how far away you are from being aligned with the road and is sent over USB to the PIC32 microcontroller which implements a proportional controller in order to decide what PWM signal to send the motors.</p>
+						  <p> Overall the project was a success. The video shows a working prototype a few days before the competition. The final design can be seen on the image. An Android Lego head was added as an ornament. It sits on top of a servo motor and turns to look at the road as the vehicle traverses the course. For a more in depth look at the code please visit my github page <b><a href="https://github.com/mariosebasco/ME433_GIT/tree/master/Final_Project" target="blank" >here</a></b></p>.
+						  <table>
+						    <tr>
+						      <td align="center"><a class="image"><img src="images/car_finish.jpg" alt="car pic" width="50%" height="50%" /></a></td>
+						    </tr>
+						    </table>
+						</div>
+					</section>
+
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+			  <div class="inner">
+			    <ul class="menu">
+			      <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			    </ul>
+			  </div>
+			</footer>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

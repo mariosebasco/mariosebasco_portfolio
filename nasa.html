@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NASA SAFE50</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Home</a>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">NASA SAFE50</h1>
+
+							<h4> Overview </h4>
+							<p>As part of a research team at the NASA Ames Research Center I worked on the implementation of a Safe Autonomous Flight Environment for small UAV’s within 50 feet of the ground (SAFE50). The project looked into several aspects of UAV safety, these included motor failure control algorithms, wind prediction control algorithms, and CFD studies. In particular I studied the effects that high wind speeds of an urban environment would have on a small flying system and how to find an optimal route to reach your destination given an initial map of wind velocities.</p>
+							<hr/>
+							<h4> Route Optimization</h4>
+							<p>  The route optimization procedure developed, implemented a numerical scheme in order to minimize the travel time of a UAV given a wind velocity vector field obtained from CFD testing. Using Matlab and OpemFoam (CFD software) the images below display the results of the path planning algorithm incorporated with CFD data. </p>
+							<table>
+							  <tr align="center">
+							    <td><a class="image"><img src="images/optimal1.png" alt="optimal" data-position="25% 25%" width="75%" height="75%"/></a></td>
+							  </tr>
+							  <tr align="center">
+							    <td><a class="image"><img src="images/optimal2.png" alt="optimal" data-position="25% 25%" width="75%" height="75%"/></a></td>
+							  </tr>
+							  <tr align="center">
+							    <td><a class="image"><img src="images/optimal3.png" alt="optimal" data-position="25% 25%" width="75%" height="75%"/></a></td>
+							  </tr>
+							</table>
+							
+							
+							<p>For a more in depth understanding of the work, or a look at some of the other research I did, feel free to view the full<b> <a href="NASAFullRep.pdf" targer="blank" >technical report</a></b></p>
+							<hr/>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

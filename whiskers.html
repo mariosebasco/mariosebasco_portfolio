@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Human-Robot Haptic Interface</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Home</a>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Human-Robot Haptic Interface</h1>
+
+							<h4> Overview </h4>
+							<p>As part of my final project at Northwestern University, I am working with professor Mitra Hartmann in her research with rat whiskers. As the group has been studying the subject for years, they have researched and developed many interesting topics. Most notably, the group at Northwestern has developed a mechanical rat whisker capable of obtaining moment and force information. In an effort to exploit this data, my project aims at creating a human interface for the device. Specifically, I seek to design and build a model which will give humans control over an array of rat whiskers, and accurately and intuitively relate that information back to the user in the form of haptic feedback.</p>
+							<hr/>
+							<h4> Early Prototyping </h4>
+							<p>Early stage research has been focused on the ability to give the user feedback which can relate back a sense of magnitude and position given whisker data. In order to do this, small micropumps will apply pressure at several different locations throughout a person’s fingers, when a rat whisker comes into contact with a surface activating the correct pump will give a sense of the forces being felt in a specific location (as shown below).</p>
+							<table>
+							  <tr align="center">
+							    <td align="center"><a class="image"><img src="images/microPump.png" alt="micro_pump" data-position="25% 25%" width="100%" height="100%"/></a></td>
+							    <td align="center"><a class="image"><img src="images/whisker_rings.png" alt="setup" data-position="25% 25%" width="100%" height="100%"/></a></td>
+							  </tr>
+							</table>
+							
+							
+							<p>The pump shown in the figure is a piezoelectric pump, which can be, when supplied with an AC current at its resonant frequency (of 26KHz), used to blow air into a small cavity. In this case the pump blows into a small hollow ring  which wraps around the finger as seen. With the use of sensory data from the whiskers and a pressure feedback loop at the hand an intuitive feel for what an array of rat of rat whiskers is sensing remotely can be created.
+							<p> Initial prototyping has incorporated creating a driver for the pumps from a PIC32 microcontroller, as well as molding numerous hollow rings in order to test which is best capable of performing the task.</p>
+							<hr/>
+							<h4> Future Work </h4>
+							<p> The project is only in its early stages. In the following months I hope to continue the goal stated in the overview. The next immediate step is to create a full control loop using a micropump attached to a pressure sensor. With the use of a driver for the piezo, and a microcontroller, the design should be capable of providing haptic feedback to a user while actively controlling the magnitude of the forces sensed through a computer.</p>
+							<p> Further work will try and include the rat whiskers. A system which will allow a user to actively move the devices is the second big step in the project. The final step will be to integrate the two and, once fine tuned, bring together several of these models to, as is the goal, allow a person complete haptic feedback.</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

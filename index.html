@@ -1,31 +1,202 @@
----
-layout: main
-title: Portfolio
----
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mario Sebasco</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
 
-<main id="portfolio">
-	<h1 class="page-header">Portfolio</h1>
-	<section>
-		<div id="portfolio-gallery">
-			{% assign sorted_pages = site.projects | sort:"path" %}
-			{% for project in sorted_pages %}
-			<div class="container">
-				<div class="aspect-ratio-keeper"> </div>
-				<div class="content">
-					<a href="{{ site.baseurl }}{{ project.url }}">
-						<span class="link-spanner"></span>
-						<div class="image-container">
-							<div class="image-vertical-align-box" >
-								<img class="inner" src="{{ project.imageMain }}">
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#about">About me</a></li>
+							<li><a href="#contact">Get in touch</a></li>
+							<li><a href="Resume.pdf">Resume</a></li>
+							
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Mario Sebasco</h1>
+							<p>Master of Science in Robotics Engineering <br/> Northwestern University</p>
+							<ul class="actions">
+								<li><a href="#projects" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- projects -->
+					<section id="projects" class="wrapper style2 spotlights">
+						<section>
+							<a href="whiskers.html" class="image"><img src="images/whiskers.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Human-Robot Haptic Interface</h2>
+									<p>The aim of this project is to design and build a system which will give a user control over an array of mechanical rat whiskers, and accurately and intuitively relate sensory information back in the form of haptic feedback.</p>
+									<ul class="actions">
+										<li><a href="whiskers.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="haptics.html" class="image"><img src="images/1DOF.gif" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Impedance Controlled One DOF Haptic Simulations</h2>
+									<p>This project incorporates impedance control of an electromechanical actuator, CAD and prototyping, and a ROS interface, in order to provide a user with visual and haptic feedback of: springs, dampers, masses, walls, textures, and other possible one dimensional environments.</p>
+									<ul class="actions">
+										<li><a href="haptics.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<!-- <section> -->
+						<!-- 	<a href="controls.html" class="image"><img src="images/pendulum.gif" alt="" data-position="25% 25%" /></a> -->
+						<!-- 	<div class="content"> -->
+						<!-- 		<div class="inner"> -->
+						<!-- 			<h2>Nonlinear Controls and Dynamics</h2> -->
+						<!-- 			<p> Smaller projects involving topics ranging from the optimization of infinite dimensional nonlinear systems, to the solution of the Euler-Lagrange equations in dynamics applications.</p> -->
+						<!-- 			<ul class="actions"> -->
+						<!-- 				<li><a href="controls.html" class="button">Learn more</a></li> -->
+						<!-- 			</ul> -->
+						<!-- 		</div> -->
+						<!-- 	</div> -->
+						<!-- </section> -->
+						<section>
+							<a href="mechatronics.html" class="image"><img src="images/mechatronics.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Mechatronics</h2>
+									<p> Projects in the field of mechatronics. Includes microcontrollers, motor control, building a small scale electric car, and much more.</p>
+									<ul class="actions">
+										<li><a href="mechatronics.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="baxter.html" class="image"><img src="images/baxter.png" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Baxter - The Advanced Robotic Servant</h2>
+									<p>The objective of this project is a simple setup for a fancy dinner using the extensive capabilities of Baxter. Given a set of three utensils (a fork, a spoon, and a knife), Baxter is required to place them in a specified position relative to a plate, akin to proper table setting in a fancy restaurant.</p>
+									<ul class="actions">
+										<li><a href="baxter.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="nasa.html" class="image"><img src="images/NASA.png" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>NASA - SAFE50</h2>
+									<p>As part of a research team at the NASA Ames Research Center I worked on the implementation of a Safe Autonomous Flight Environment for small UAV's within 50 feet of the ground (SAFE50). The project looked into several aspects of UAV safety, including motor failure control algorithms, wind prediction control algorithms, and CFD studies.</p>
+									<ul class="actions">
+										<li><a href="nasa.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="lift.html" class="image"><img src="images/liftFinalUp.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Mechanical WheelChair Lift</h2>
+									<p>The objective of this project is to design a system that would allow a disabled person to traverse a set of stairs without aid from another individual. After completing preliminary research on all the ideas presently available, it was decided that the mechanism to be used would be a mechanical wheelchair lift. The project incorporates CAD, stress analysis, and rapid prototyping.</p>
+									<ul class="actions">
+										<li><a href="lift.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						
+						
+						
+					</section>
+
+				<!-- Two -->
+					<section id="about" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>About Me</h2>
+							<p>Originally from Florida, I graduated from the University of Miami with a Bachelor’s Degree in Mechanical Engineering (Magna Cum Laude) and a minor in Mathematics. During my time as an undergrad, I participated in several different clubs and activities, including projects with SEDS, ASME, and EWB. I also spent several months under the mentorship of the head of the Aerospace department at UM, performing research in Computational Fluid Dynamics (CFD). Outside of school I've participated in several internships, including a position at HDT Global - Robotics, and a summer research opportunity with NASA.  <br/> <br/>Having learned a great deal during my undergraduate career, and now wrapping up at Northwestern, I hope I can contribute to the fast paced, rapidly evolving field of engineering. </p>
+							<a class="image"><img src="images/mario.jpg" alt="" data-position="25% 25%" width="40%" height="40%"/></a>
+							
+							<ul class="actions">
+							  <li><a href="Resume.pdf" class="button">Resume</a></li>
+							  <li><a href="https://www.linkedin.com/in/mario-sebasco-668973a4/" class="button">LinkedIn</a></li>
+							  <li><a href="https://github.com/mariosebasco" class="button">Github</a></li>
+							  
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="contact" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>If there is anything else you would like to know about me, or would like to contact me personally regarding project ideas or opportunities, please feel free to email or call me at any time.</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="field half">
+											<label for="email">Email</label>
+											<p> mariosebasco@yahoo.com </p>
+										</div>
+										<div class="field">
+											<label for="Phone">Phone</label>
+											<p> (786) 712 5264 </p>
+										</div>
+									</form>
+								</section>
+								<section>
+								  <a class="image"><img src="images/mars_explorers_wanted.jpg" alt="" data-position="25% 25%"/></a>
+								</section>
 							</div>
 						</div>
-						<div class="inner-text">
-							<h2>{{ project.title }}</h2>
-						</div>
-					</a>
-				</div>
+					</section>
+
 			</div>
-			{% endfor %}
-		</div>
-	</section>
-</main>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
