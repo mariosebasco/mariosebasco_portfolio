@@ -30,20 +30,29 @@
 							<h1 class="major">Human-Robot Haptic Interface</h1>
 
 							<h4> Overview </h4>
-							<p>As part of my final project at Northwestern University, I am working with professor Mitra Hartmann in her research with rat whiskers. As the group has been studying the subject for years, they have researched and developed many interesting topics. Most notably, the group at Northwestern has developed a mechanical rat whisker capable of obtaining moment and force information. In an effort to exploit this data, my project aims at creating a human interface for the device. Specifically, I seek to design and build a model which will give humans control over an array of rat whiskers, and accurately and intuitively relate that information back to the user in the form of haptic feedback.</p>
+							<p>As part of my final project at Northwestern University, I worked with professor Mitra Hartmann in her research on rat whiskers. As the group has been studying the subject for years, they have researched and developed many interesting topics. Most notably, they have developed a mechanical rat whisker sensor which is capable of obtaining moment and force information upon contact with an object. In an effort to exploit this data, my project aims at creating a human interface for the device. Specifically, I seek to design and build a system which will give humans control over an array of rat whiskers, and accurately and intuitively relate that information back to the user in the form of haptic feedback.</p>
+							<p> The applicability of this research can scale to multiple fields. In surgical robotics, and other areas where high precision is mandatory, the use of visual feedback alone may not be enough, and haptics may prove to be the best solution. Similarly, in applications where other sensory information just isn't possible due to lack of light, or other obstructions, we may find that having the added sense of touch can make difficult operations exponentially simpler.</p>
 							<hr/>
 							<h4> Early Prototyping </h4>
-							<p>Early stage research has been focused on the ability to give the user feedback which can relate back a sense of magnitude and position given whisker data. In order to do this, small micropumps will apply pressure at several different locations throughout a person’s fingers, when a rat whisker comes into contact with a surface activating the correct pump will give a sense of the forces being felt in a specific location (as shown below).</p>
+							<p>Early stage research was focused on the ability to give the user feedback which could relate back a sense of magnitude and position given whisker data. In order to do this, small rings are used to apply pressure at several different locations throughout a person’s fingers. When a rat whisker comes into contact with a surface, pressurizing the correct ring will give a sense of the forces being felt in a specific location.</p>
+							<p>The proposed idea has several key components: mechanical design, electrical design, and embedded programming. The next few sections will go into more detail about each.</p>
+							<hr/>
+							<h4> Ring Design </h4>
+							<p> In designing a ring for a person to wear, several features need to be considered. An ideal ring would have a degree of flexibility in order to fit on a variety of finger sizes, a small size in order to allow the user to maintain full range of motion, and good functionality (i.e. the ring should have good resolution when pressurizing a finger). For this initial iteration of the project, the proposed ring design can be seen in the image below.</p>
+							<p> The ring is made by casting a silicone material. The result is a flexible piece which can be adjusted to fit on a variety of different circumferences. Notice from the image that the    </p>
 							<table>
 							  <tr align="center">
-							    <td align="center"><a class="image"><img src="images/microPump.png" alt="micro_pump" data-position="25% 25%" width="100%" height="100%"/></a></td>
-							    <td align="center"><a class="image"><img src="images/whisker_rings.png" alt="setup" data-position="25% 25%" width="100%" height="100%"/></a></td>
+							    <td align="center"><a class="image"><img src="images/ring.JPG" alt="ring_no_tubes" data-position="25% 25%" width="100%" height="100%"/></a></td>
+							    <td align="center"><a class="image"><img src="images/ring_tubes.JPG" alt="ring_with_tubes" data-position="25% 25%" width="100%" height="100%"/></a></td>
 							  </tr>
 							</table>
 							
+							<hr/>
+							<h4> Mechatronics </h4>
+							<hr/>
+							<h4> System Control </h4>
 							
-							<p>The pump shown in the figure is a piezoelectric pump, which can be, when supplied with an AC current at its resonant frequency (of 26KHz), used to blow air into a small cavity. In this case the pump blows into a small hollow ring  which wraps around the finger as seen. With the use of sensory data from the whiskers and a pressure feedback loop at the hand an intuitive feel for what an array of rat of rat whiskers is sensing remotely can be created.
-							<p> Initial prototyping has incorporated creating a driver for the pumps from a PIC32 microcontroller, as well as molding numerous hollow rings in order to test which is best capable of performing the task.</p>
+							
 							<hr/>
 							<h4> Future Work </h4>
 							<p> The project is only in its early stages. In the following months I hope to continue the goal stated in the overview. The next immediate step is to create a full control loop using a micropump attached to a pressure sensor. With the use of a driver for the piezo, and a microcontroller, the design should be capable of providing haptic feedback to a user while actively controlling the magnitude of the forces sensed through a computer.</p>
