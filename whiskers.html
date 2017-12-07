@@ -56,13 +56,13 @@
 							
 							<hr/>
 							<h4> Mechatronics </h4>
-							<p> Currently there are several key parts to the electronics: The PIC32 microcontroller, an external PWM driver, H-Bridge circuits, pressure sensors and pumps, servo motors, and smaller components like op amps and potentiometers. </p>
+							<p> Currently there are several key parts to the electronics: The PIC32 microcontroller (on the NU32 breakout board), an external PWM driver, H-Bridge circuits, pressure sensors and pumps, servo motors, and smaller components like op amps and potentiometers. </p>
 							<ul>
 							  <li><b>PIC32:</b> Aside from running the main control loop and analyzing the data, which will be explained in the next section, the PIC is in charge of using I2C communication in order to speak with the external PWM driver, and the ADC in order to receive signals from sensors.</li>
 							  <li><b>PWM Driver</b>: This device is necessary when a large number of whiskers are being used (as the pressure pumps and servo motors both require PWM input signals). It interacts with the PIC using I2C and includes several configurable parameters, of which the most important are frequency and duty cycle. </li>
-							  <li><b>H Bridge:</b> These circuits are in charge of driving the small pumps, for which (as with more standard motor control) a PWM signal is used and the duty cycle determines the magnitude of the pressure being exerted.</li>
+							  <li><b>H-Bridge:</b> These circuits are in charge of driving the small pumps, for which (as with more standard motor control) a PWM signal is used and the duty cycle determines the magnitude of the pressure being exerted.</li>
 							  <li><b>Servo motor:</b> Servos are used in this prototype in order to rotate the rat whisker about an axis (as shown in the video). powered by an external power supply, the servos are also controlled using PWM signals</li>
-							  <li><b>Pressure Sensor:</b> In order to provide a more robust controller, pressure sensors are used as feedback for the system. The pressure sensors use a constant source current supply of 100mA, and the outputs need to be passed through a differential amplifier before being read by the ADC on the PIC. The electrical schematic below shows the setup used to achieve this.</li>
+							  <li><b>Pressure Sensor:</b> In order to provide a more robust controller, pressure sensors are used as feedback for the system. The pressure sensors use a constant source current supply of 100mA, and the outputs need to be passed through a differential amplifier before being read by the ADC on the PIC. The electrical schematic on the right below shows the setup used to achieve this.</li>
 							  <li><b>Electric Pump:</b>The small pumps are run by brushed DC motors. As mentioned above these are controlled by the H Bridges. </li>
 							  <li><b>Potentiometer:</b> In order to track the distance that the user has rotated their hand, small potentiometers are used for this prototype (these are located in the stand that is being rotated by the person in the video). </li>
 							</ul>						  
@@ -76,12 +76,11 @@
 							
 							<hr/>
 							<h4> Embedded Programming and Control </h4>
-							
+							<p> All of the software for this project can be found in <a href="https://github.com/mariosebasco/MSR_Final" target="blank">this</a> Github repo. The code, written in C, is meant to be run on the PIC32 microcontroller. The main loop works as follows. The ADC is muxed so that it reads the data coming from the potentiometers, this value is converted to the degree that the user has rotated. The value is once again converted, this time to a PWM signal in order to turn the servo motors to the correct angle. The ADC is now muxed once again in order to read data coming from the whiskers. If the whiskers have come into contact with something then there will be a difference in the voltage reading. This value is converted into a "desired pressure". A smaller feedback loop then runs using the H-bridge drivers and pressure sensors in order to increase/decrease the pressure felt at the corresponding ring accordingly. This is done for all whisker/ring pairs in order to complete one full cycle. The key in writing the code was to make it modular in order to allow for as much reusability as possible for the future, particularly in the event of changes to the approach taken. Included in the repo are also several files that are not used in the final prototype. This entails code for an IMU, external GPIO, digital potentiometer, and more, which were implemented in previous iterations but discarded as progress was made.</p>
 							
 							<hr/>
-							<h4> Future Work </h4>
-							<p> The project is only in its early stages. In the following months I hope to continue the goal stated in the overview. The next immediate step is to create a full control loop using a micropump attached to a pressure sensor. With the use of a driver for the piezo, and a microcontroller, the design should be capable of providing haptic feedback to a user while actively controlling the magnitude of the forces sensed through a computer.</p>
-							<p> Further work will try and include the rat whiskers. A system which will allow a user to actively move the devices is the second big step in the project. The final step will be to integrate the two and, once fine tuned, bring together several of these models to, as is the goal, allow a person complete haptic feedback.</p>
+							<h4> Conclusion </h4>
+							<p> The project is only in its early stages. The video shows a first prototype for a single whisker/ring pair. Although the board can run two whiskers, and more can be added, ideally, the goal is to achieve a system closer to 15 whiskers and rings (about three per finger), in order for a user to fully get a sense of geometry in an environment. In order to accomplish this several more design iterations will need to be tested. The rings will need to be improved, likely a customized PCB board will have to ordered, and more intricate systems will need to be built to track user finger position and rotate the whiskers. Despite this, I believe the project is headed in a good direction, and is one that introduces a novel technology which can find several applications in the rapidly expanding field of robotics. It was a culmination of several different ares of engineering, and a fantastic experience overall.</p>
 						</div>
 					</section>
 
