@@ -58,19 +58,19 @@
 							<h4> Mechatronics </h4>
 							<p> Currently there are several key parts to the electronics: The PIC32 microcontroller, an external PWM driver, H-Bridge circuits, pressure sensors and pumps, servo motors, and smaller components like op amps and potentiometers. </p>
 							<ul>
-							  <li align="left"> PIC32: Aside from running the main control loop and analyzing the data, which will be explained in the next section, the PIC is in charge of using I2C communication in order to speak with the external PWM driver, and the ADC in order to receive signals from sensors.</li>
-							  <li align="left">PWM Driver: This device is necessary when a large number of whiskers are being used (as the pressure pumps and servo motors both require PWM input signals). It interacts with the PIC using I2C and includes several configurable parameters, of which the most important are frequency and duty cycle. </li>
-							  <li align="left">H Bridge: These circuits are in charge of driving the small pumps, for which (as with more standard motor control) a PWM signal is used and the duty cycle determines the magnitude of the pressure being exerted.</li>
-							  <li> Servo motor: Servos are used in this prototype in order to rotate the rat whisker about an axis (as shown in the video). powered by an external power supply, the servos are also controlled using PWM signals</li>
-							  <li>Pressure Sensors: In order to provide a more robust controller, pressure sensors are used as feedback for the system. The pressure sensors use a constant source current supply of 100mA, and the outputs need to be passed through a differential amplifier before being read by the ADC on the PIC. The electrical schematic below shows the setup used to achieve this.</li>
-							  <li> The small pumps are run by brushed DC motors. As mentioned above these are controlled by the H Bridges. </li>
-							  <li>Potentiometers: In order to track the distance that the user has rotated their hand, small potentiometers are used for this prototype (these are located in the stand that is being rotated by a person in the video). </li>
+							  <li><b>PIC32:</b> Aside from running the main control loop and analyzing the data, which will be explained in the next section, the PIC is in charge of using I2C communication in order to speak with the external PWM driver, and the ADC in order to receive signals from sensors.</li>
+							  <li><b>PWM Driver</b>: This device is necessary when a large number of whiskers are being used (as the pressure pumps and servo motors both require PWM input signals). It interacts with the PIC using I2C and includes several configurable parameters, of which the most important are frequency and duty cycle. </li>
+							  <li><b>H Bridge:</b> These circuits are in charge of driving the small pumps, for which (as with more standard motor control) a PWM signal is used and the duty cycle determines the magnitude of the pressure being exerted.</li>
+							  <li><b>Servo motor:</b> Servos are used in this prototype in order to rotate the rat whisker about an axis (as shown in the video). powered by an external power supply, the servos are also controlled using PWM signals</li>
+							  <li><b>Pressure Sensor:</b> In order to provide a more robust controller, pressure sensors are used as feedback for the system. The pressure sensors use a constant source current supply of 100mA, and the outputs need to be passed through a differential amplifier before being read by the ADC on the PIC. The electrical schematic below shows the setup used to achieve this.</li>
+							  <li><b>Electric Pump:</b>The small pumps are run by brushed DC motors. As mentioned above these are controlled by the H Bridges. </li>
+							  <li><b>Potentiometer:</b> In order to track the distance that the user has rotated their hand, small potentiometers are used for this prototype (these are located in the stand that is being rotated by the person in the video). </li>
 							</ul>						  
 							<p> Most of the components can be shown in the prototype board in the image below. Missing are the pumps, whiskers, servos, potentiometers, and external PWM driver, which connect to this board. Missing also is an external power supply which must be used in order to drive the motors and whiskers. The prototype board shown can support two whisker systems (as can be seen there are only two pressure sensors) although more can be added without much complexity. </p>
 							<table>
 							  <tr align="center">
-							    <td align="center"><a class="image"><img src="images/circuit_board.JPG" alt="ring_no_tubes" data-position="25% 25%" width="50%" height="50%"/></a></td>
-							    <td align="center"><a class="image"><img src="images/pressure_sensor.png" alt="ring_with_tubes" data-position="25% 25%" width="50%" height="50%"/></a></td>
+							    <td align="center"><a class="image"><img src="images/circuit_board.JPG" alt="ring_no_tubes" data-position="25% 25%" width="80%" height="80%"/></a></td>
+							    <td align="center"><a class="image"><img src="images/pressure_sensor.png" alt="ring_with_tubes" data-position="25% 25%" width="80%" height="80%"/></a></td>
 							  </tr>
 							</table>
 							
