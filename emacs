@@ -22,6 +22,7 @@ There are two things you can do about this warning:
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(inhibit-startup-screen t)
+ '(package-selected-packages (quote (dumb-jump)))
  '(send-mail-function (quote mailclient-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -42,3 +43,4 @@ There are two things you can do about this warning:
 (global-set-key (kbd "C-;") 'dumb-jump-go)
 (global-set-key (kbd "C-x C-;") 'dumb-jump-go-other-window)
 (global-set-key (kbd "C-'") 'dumb-jump-back)
+(setq dumb-jump-default-project ".")
