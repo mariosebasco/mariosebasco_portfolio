@@ -21,8 +21,14 @@ There are two things you can do about this warning:
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+
+ ;;visual
+ '(beacon-mode t)
+ '(beacon-color 0.0)
+ '(beacon-blink-when-point-moves-vertically 1)
+ '(nyan-mode t)
+ 
  '(inhibit-startup-screen t)
- '(package-selected-packages (quote (dumb-jump)))
  '(send-mail-function (quote mailclient-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -31,16 +37,52 @@ There are two things you can do about this warning:
  ;; If there is more than one, they won't work right.
  )
 
+(custom-set-faces
+
+ '(term-color-black ((t (:foreground "#3F3F3F" :background "#2B2B2B"))))
+ '(term-color-red ((t (:foreground "#AC7373" :background "#8C5353"))))
+ '(term-color-green ((t (:foreground "#7F9F7F" :background "#9FC59F"))))
+ '(term-color-yellow ((t (:foreground "#DFAF8F" :background "#9FC59F"))))
+ '(term-color-blue ((t (:foreground "#7CB8BB" :background "#4C7073"))))
+ '(term-color-magenta ((t (:foreground "#DC8CC3" :background "#CC9393"))))
+ '(term-color-cyan ((t (:foreground "#93E0E3" :background "#8CD0D3"))))
+ '(term-color-white ((t (:foreground "#DCDCCC" :background "#656555"))))
+
+ '(term-default-fg-color ((t (:inherit term-color-white))))
+ '(term-default-bg-color ((t (:inherit term-color-black))))
+
+ )
+
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+
+;;general
 (global-set-key (kbd "M-[") 'comment-region)
 (global-set-key (kbd "M-]") 'uncomment-region)
+(global-set-key (kbd "M-n") 'forward-paragraph)
+(global-set-key (kbd "M-p") 'backward-paragraph)
+(global-set-key (kbd "C-,") 'term)
+
+;; search copy/paste/cut/delete
+(global-set-key (kbd "C-;") 'dumb-jump-go-other-window)
+(global-set-key (kbd "C-x C-;") 'dumb-jump-go)
+(global-set-key (kbd "C-'") 'dumb-jump-back)
+(setq dumb-jump-default-project "./")
+(global-set-key (kbd "C-Q") 'neotree-toggle)
+(setq neo-smart-open t)
+(global-set-key (kbd "C-c C-v") 'popup-kill-ring)
+
+;;theme
+(load-theme 'misterioso)
+(set-cursor-color "#ffffff") 
+
+;;window control
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+(global-set-key (kbd "C-x C-o") 'other-window)
 (global-set-key (kbd "C-x C-f") 'find-file-other-window)
 (global-set-key (kbd "C-x f") 'find-file)
-(global-set-key (kbd "C-x C-o") 'other-window)
-(global-set-key (kbd "C-x C-b") 'buffer-menu)
-(global-set-key (kbd "C-x b") 'buffer-menu-other-window)
-(global-set-key (kbd "C-;") 'dumb-jump-go)
-(global-set-key (kbd "C-x C-;") 'dumb-jump-go-other-window)
-(global-set-key (kbd "C-'") 'dumb-jump-back)
-(setq dumb-jump-default-project ".")
+(global-set-key (kbd "C-x b") 'buffer-menu)
+(global-set-key (kbd "C-x C-b") 'buffer-menu-other-window)
+
+
