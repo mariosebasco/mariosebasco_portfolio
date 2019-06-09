@@ -1,3 +1,3 @@
 # portfolio
 
-<a href="mariosebasco.github.io"><u>Project portfolio </u></a>
+<a href="https://mariosebasco.github.io/"><u>Project portfolio </u></a>
